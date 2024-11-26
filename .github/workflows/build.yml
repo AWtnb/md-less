@@ -1,0 +1,16 @@
+name: Build CSS
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install less
+        run: npm install -g less
+      - name: Build CSS
+        run: lessc style.less dist/style.css
