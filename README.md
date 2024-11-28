@@ -1,6 +1,6 @@
 # README
 
-Personal stylesheet ([less](https://lesscss.org/)) for markdown-compiled html.
+Stylesheet ([less](https://lesscss.org/)) for markdown-compiled html.
 
 On html (inside `<head>` tag):
 
