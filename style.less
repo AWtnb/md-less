@@ -1,5 +1,6 @@
 // ------------------------------------------------------------
 // Stylesheet for markdown-compiled html document.
+// https://github.com/AWtnb/md-less
 // ------------------------------------------------------------
 
 @import url("https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp_s-noto.min.css");
@@ -60,19 +61,19 @@ body {
   }
 }
 
-.container {
+#container {
   width: var(--width-container);
   margin: 0 auto;
   padding-bottom: 50vh;
   position: relative;
 }
 @media print {
-  .container {
+  #container {
     padding-bottom: 0;
   }
 }
 
-.main {
+#main {
   > p {
     margin-left: 1em;
     margin-right: 1em;
@@ -432,11 +433,7 @@ table {
   }
 }
 
-//////////////////////////////
-// custom class
-//////////////////////////////
-
-.timestamp {
+#timestamp {
   margin-right: 1rem;
   text-align: end;
   font-size: 10px;
@@ -446,7 +443,7 @@ table {
 
 @width-side: calc((100vw - var(--width-container)) / 2);
 
-.toc {
+#toc {
   position: absolute;
   left: calc(-1 * @width-side + 1em);
   max-width: calc(@width-side - 2em);
@@ -482,7 +479,7 @@ table {
   }
 }
 @media print {
-  .toc {
+  #toc {
     display: none;
   }
 }
