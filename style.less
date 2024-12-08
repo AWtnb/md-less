@@ -485,11 +485,15 @@ table {
 }
 
 p.page-separator {
-  color: #eb4034;
-  text-align: center;
+  margin: 2em 0;
+  position: relative;
+  border-bottom: 1px dashed tomato;
   page-break-after: always;
   &::before {
-    content: "- - - - - - - - - - \2702 - - - - - - - - - -";
+    position: absolute;
+    content: "\2702";
+    bottom: -0.75em;
+    left: -1.25em;
   }
 }
 @media print {
