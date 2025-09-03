@@ -433,6 +433,10 @@ table {
   }
 }
 
+//////////////////////////////
+// custom elements / class
+//////////////////////////////
+
 #timestamp {
   margin-right: 1rem;
   text-align: end;
@@ -546,16 +550,14 @@ p.page-separator {
   }
 }
 
-.tag {
-  font-size: 0.9em;
-  padding: 0 0.1em;
-  color: tomato;
-  margin-left: 1em;
-  &::before {
-    content: "#";
-  }
+.callout {
+  border-left: 1px solid @color-accent-dark;
+  padding-left: 0.5rem;
+  margin: 1rem;
 }
-
-span.paren {
-  font-size: 0.9em;
+.callout svg {
+  stroke: @color-accent-dark;
+}
+.callout p {
+  margin: 0.25rem 0;
 }
