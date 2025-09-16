@@ -1,0 +1,16 @@
+{
+  "name": "md-less",
+  "version": "1.0.0",
+  "description": "Stylesheet ([less](https://lesscss.org/)) for markdown-compiled html.",
+  "main": "index.js",
+  "scripts": {
+    "build": "lessc style.less dist/style.css --compress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.4.1"
+  }
+}
+

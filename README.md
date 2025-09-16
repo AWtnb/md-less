@@ -1,24 +1,9 @@
 # README
 
-Stylesheet ([less](https://lesscss.org/)) for markdown-compiled html.
+Personal stylesheet for markdown-compiled html document.
 
-On html (inside `<head>` tag):
+Use `dist/style.css`
 
-```html
-<link rel="stylesheet/less" type="text/css" href="https://cdn.jsdelivr.net/gh/Awtnb/md-less@latest/style.less" />
-<script src="https://cdn.jsdelivr.net/npm/less" ></script>
 ```
-
-or
-
-```html
-<link rel="stylesheet/less" type="text/css" href="https://raw.githubusercontent.com/AWtnb/md-less/refs/heads/main/style.less" />
-<script src="https://cdn.jsdelivr.net/npm/less" ></script>
-```
-
-or
-
-```html
-<link rel="stylesheet/less" type="text/css" href="style.less" />
-<script src="https://cdn.jsdelivr.net/npm/less" ></script>
+npm run build
 ```
