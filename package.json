@@ -4,13 +4,13 @@
   "description": "Stylesheet ([less](https://lesscss.org/)) for markdown-compiled html.",
   "main": "index.js",
   "scripts": {
-    "build": "lessc style.less dist/style.css --compress"
+    "build": "lessc --clean-css style.less dist/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "less": "^4.4.1"
+    "less": "^4.4.1",
+    "less-plugin-clean-css": "^1.6.0"
   }
 }
-
